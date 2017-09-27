@@ -5,21 +5,23 @@ namespace YazX
     {
         public Scoreboard()
         {
-            int Ones;
-            int Twos;
-            int Threes;
-            int Fours;
-            int Fives;
-            int Sixes;
-            int ThreeOfKind;
-            int FourOfKind;
-            int Fullhouse;
-            int SmallStraight;
-            int LargeStraight;
-            int Yaz;
-            int Chance;
-            bool Bonus;
-
+            // Constructor
         }
+
+        public int Ones;
+        public int Twos;
+        public int Threes;
+        public int Fours;
+        public int Fives;
+        public int Sixes;
+        public int ThreeOfKind;
+        public int FourOfKind;
+        public int Fullhouse;
+        public int SmallStraight;
+        public int LargeStraight;
+        public int Yaz;
+        public int Chance;
+        public bool Bonus;
+
     }
 }

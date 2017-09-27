@@ -5,9 +5,12 @@ namespace YazX
     {
         public DiceResults()
         {
-            bool TrueFalse = false;
-            int Value1;
-            int Value2;
+            // Constructor
         }
+
+        public bool TrueFalse = false;
+        public int Value1;
+        public int Value2;
+
     }
 }

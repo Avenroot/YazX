@@ -92,7 +92,7 @@ namespace YazX
             return r;
         }
 
-        DiceResults IsTwoOfSameKind()
+        public DiceResults IsTwoOfSameKind()
         {
             DiceResults r = new DiceResults();
 
@@ -162,7 +162,7 @@ namespace YazX
             return r;
         }
 
-        DiceResults IsThreeOfSameKind()
+        public DiceResults IsThreeOfSameKind()
         {
             DiceResults r = new DiceResults();
 

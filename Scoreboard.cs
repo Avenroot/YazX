@@ -14,20 +14,23 @@ namespace YazX
         public int YazValue = 50;
         public int UpperBonusValue = 35;
 
-        public int Ones;
-        public int Twos;
-        public int Threes;
-        public int Fours;
-        public int Fives;
-        public int Sixes;
-        private int threeOfKind;
-        public int FourOfKind;
-        public int Fullhouse;
-        public int SmallStraight;
-        public int LargeStraight;
-        public int Yaz;
-        public int Chance;
-        public bool Bonus;
+        public int Ones { get; set; }
+        public int Twos { get; set; }
+        public int Threes { get; set; }
+        public int Fours { get; set; }
+        public int Fives { get; set; }
+        public int Sixes { get; set; }
+        
+        public int ThreeOfKind { get; set; }
+        public int FourOfKind { get; set; }        
+        public int FullHouse { get; set; }        
+        public int SmallStraight { get; set; }        
+        public int LargeStraight { get; set; }        
+        public int Yaz { get; set; }        
+        public int Chance { get; set; }        
+        public bool Bonus { get; set; }
+
+      
 
         // Get Upper Total
         public int UpperTotal
@@ -47,7 +50,7 @@ namespace YazX
         {
             get
             {
-                var r = ThreeOfKind + FourOfKind + Fullhouse + SmallStraight + LargeStraight + Yaz + Chance;
+                var r = ThreeOfKind + FourOfKind + FullHouse + SmallStraight + LargeStraight + Yaz + Chance;
 
                 return r;
             }
@@ -64,17 +67,23 @@ namespace YazX
             }            
         }
 
-        public int ThreeOfKind
+        // Resets the Scoreboard
+        public void Reset()
         {
-            get
-            {
-                return threeOfKind;
-            }
-
-            set
-            {
-                threeOfKind = value;
-            }
+            Ones = 0;
+            Twos = 0;
+            Threes = 0;
+            Fours = 0;
+            Fives = 0;
+            Sixes = 0;
+            ThreeOfKind = 0;
+            FourOfKind = 0;
+            FullHouse = 0;
+            SmallStraight = 0;
+            LargeStraight = 0;
+            Yaz = 0;
+            Chance = 0;
+            Bonus = false;
         }
     }
 }
